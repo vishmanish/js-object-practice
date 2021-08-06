@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object creating by object literals</title>
+</head>
+<body>
+    <h2>Function practice </h2>
+    <p id="demo"></p>
+    <input type="button" value="check" onclick="f1()" >
+
+    <script>
+        // object creating using literal....
+        const emp = {  //object name emp
+            eno : 101,            
+            ename : "manish",       //properties of emp 
+            esal : 55000
+        }
+        
+        function f1()
+        {
+        
+        document.getElementById("demo").innerHTML = emp.eno + " " + emp.ename + " " + emp.esal;//first way
+        alert(emp["eno"] + " " + emp["ename"] + " "+ emp["esal"]); //second way
+        document.getElementById("demo").innerHTML = `${emp.eno} ${emp.ename} ${emp.esal}`; //third way using backtic
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object creating by new keyword</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <input type="button" value="click me" onclick="f1()">
+
+
+    <script>
+        //addind behaviour on this emp 
+        const emp = {
+            eno : 101,
+            ename : "manish",
+            esal : 55000,
+            info : function()   //this is behavior of object 
+            {
+                return this.ename + " " + this.eno + " " + this.esal;
+            }
+        }
+        function f1()
+        {
+            document.getElementById("demo").innerHTML = emp.info(); //only way to print behavior
+        }
+    </script>
+</body>
+</html>
